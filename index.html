@@ -1,105 +1,57 @@
 <!DOCTYPE html>
 <html lang="th">
-
 <head>
     <meta charset="UTF-8">
-    <title>โปรไฟล์ของฉัน</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
 </head>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+        
+    nav {
+        background-color: #2c3e50;
+        padding: 10px 0;
+        display: flex;
+        flex-direction: column;
+        border-radius: 15px;
+    }
 
+    /* --- [1] สไตล์เมนูสำหรับมือถือ (เรียงแนวตั้ง) --- */
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        /* มือถือให้เรียงลงมาเป็นแถวตอนลึก */
+        padding: 20px 0;
+        list-style: none;
+        text-align: center;
+        background-color: #2c3e50;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        /* เว้นระยะให้ห่างพอสำหรับ "นิ้วมือ" กด */
+    }
+
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.1rem;
+    }
+
+    </style>
 <body>
-    ้<header>
-        <h1>ยินดีต้อนรับสู่หน้าเว็บของ [Artit]</h1>
-        <p><i>"เรียนรู้วันละนิด จิตแจ่มใส"</i></p>
-        <hr>
-        <nav>
-            <ul>
-                <li><a href="#">หน้าแรก</a></li>
-                <li><a href="#">บทความ</a></li>
-                <li><a href="#">ติดต่อ</a></li>
+    <nav class="navbar">
+        <div class="container">
+            <ul class="nav-links">
+                <li><a href="Resume.html">หน้าแรก</a></li>
+                <li class="nav-item-optional"><a href="landing.html">หลักสูตร</a></li>
+                <li class="nav-item-optional"><a href="#">รีวิวจากนักเรียน</a></li>
+                <li><a href="#">ติดต่อเรา</a></li>
             </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <img src="https://picsum.photos/200" alt="รูปโปรไฟล์" style="border-radius: 50%;">
-            <p>ติดตามผมได้ที่: <a href="https://github.com" target="_blank">GitHub ของฉัน</a></p>
-        </section>
-        <section>
-            <h3>ทักษะคอมพิวเตอร์</h3>
-            <ul>
-                <li>HTML Basics (สัปดาห์ที่ 1)</li>
-                <li>การใช้ macOS สำหรับ Dev</li>
-                <li>การพิมพ์สัมผัส</li>
-            </ul>
-        </section>
-        <section>
-            <h3>แผนการเรียนสัปดาห์ถัดไป</h3>
-            <table border="1">
-                <tr>
-                    <th>ลำดับ</th>
-                    <th>หัวข้อที่จะเรียน</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>CSS - การตกแต่งสีสัน</td>
-                </tr>
-            </table>
-        </section>
-        <section>
-
-            <h3>ส่งข้อความหาฉัน</h3>
-            <form>
-                <input type="text" placeholder="ชื่อของคุณ"><br><br>
-                <textarea placeholder="ข้อความที่อยากบอก..."></textarea><br>
-                <input type="submit" value="ส่งเลย!">
-            </form>
-        </section>
-        <section>
-            <h2>บทความล่าสุด</h2>
-            <article>
-                <h3>ทำไมผมถึงเริ่มเรียน HTML?</h3>
-                <p>เพราะผมอยากสร้างเว็บไซต์เป็นของตัวเอง...</p>
-            </article>
-        </section>
-
-        <section>
-            <h2>"ทักษะทางภาษา" (Language Skills)</h2>
-            <table border="1" style="width: 100%; border-collapse: collapse;">
-                <thead>
-                    <tr style="background-color: #f2f2f2;">
-                        <th>ภาษา</th>
-                        <th>ระดับความเข้าใจ</th>
-                        <th>คะแนนทดสอบ</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>ไทย</td>
-                        <td>ดีมาก</td>
-                        <td>3.4</td>
-                    </tr>
-                    <tr>
-                        <td>อังกฤษ</td>
-                        <td>พอใช้</td>
-                        <td>2</td>
-                    </tr>
-                    <tr>
-                        <td style="text-align: center;">ญี่ปุ่น</td>
-                        <td>พอใช้</td>
-                        <td>2</td>
-                    </tr>
-                    <tr>
-                        <td colspan="3" style="text-align: center;">ข้อมูลเพิ่มเติม: เกรดเฉลี่ยสะสม 3.50</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 สร้างด้วยความตั้งใจ</p>
-    </footer>
-
+        </div>
+    </nav>
+    
 </body>
-
 </html>
